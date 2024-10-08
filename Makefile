@@ -1,4 +1,4 @@
-PACKAGES ?= mountinfo mount sequential signal symlink user
+PACKAGES ?= mountinfo mount sequential signal symlink user userns # IMPORTANT: when updating this list, also update the conditional one in .github/workflows/test.yml
 BINDIR ?= _build/bin
 CROSS ?= linux/arm linux/arm64 linux/ppc64le linux/s390x \
 	freebsd/amd64 openbsd/amd64 darwin/amd64 darwin/arm64 windows/amd64
@@ -22,7 +22,7 @@ test: test-local
 .PHONY: tidy
 tidy:
 	set -eu; \
-		for p in $(PACKAGES); do \
+	for p in $(PACKAGES); do \
 		(cd $$p; go mod tidy); \
 	done
 
@@ -48,7 +48,7 @@ lint: $(BINDIR)/golangci-lint
 	done
 
 $(BINDIR)/golangci-lint: $(BINDIR)
-	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(BINDIR) v1.45.2
+	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(BINDIR) v1.59.1
 
 $(BINDIR):
 	mkdir -p $(BINDIR)
