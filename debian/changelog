@@ -1,3 +1,33 @@
+golang-github-moby-sys (0.0~git20241107.638aa7c-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 09 Nov 2024 11:00:16 -0500
+
+golang-github-moby-sys (0.0~git20241107.638aa7c-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream snapshot
+  * Mention new moby/sys/capability package in the package description
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 07 Nov 2024 20:08:59 -0500
+
+golang-github-moby-sys (0.0~git20240807.5447519-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 03 Sep 2024 17:05:29 -0400
+
+golang-github-moby-sys (0.0~git20240807.5447519-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream snapshot
+  * Bump Standards-Version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 02 Sep 2024 07:58:19 -0400
+
 golang-github-moby-sys (0.0~git20231105.a4e0878-1) unstable; urgency=medium
 
   * New upstream snapshot
